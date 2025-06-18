@@ -1,21 +1,39 @@
 <!DOCTYPE html>
 <html lang="ko">
-<head> 
+<head>
   <meta charset="UTF-8">
   <title>Your Rights Reserved</title>
   <style>
     body { font-family: sans-serif; margin: 10px; }
-    table { width: 100%; border-collapse: collapse; }
+    h4 { margin: 10px 0; }
+    table { width: 100%; border-collapse: collapse; margin-bottom: 20px; }
     th, td { padding: 4px; border: 1px solid #ccc; font-size: 12px; }
     th { background: #f0f0f0; }
+    .section { margin-top: 20px; }
+    .count { font-weight: bold; margin: 5px 0; }
   </style>
 </head>
 <body>
-  <h4>광고 호출 로그 (최근 10건)</h4>
-  <table>
-    <thead><tr><th>시간</th><th>호스트</th><th>카테고리</th></tr></thead>
-    <tbody id="logTable"></tbody>
-  </table>
+  <div class="section">
+    <h4>1. 데이터 전송 로그 (site ➔ tracker)</h4>
+    <div class="count">총 전송 로그: <span id="dataCount">0</span>건</div>
+    <table>
+      <thead>
+        <tr><th>시간</th><th>사이트</th><th>사이트 분류</th><th>추적호스트</th></tr>
+      </thead>
+      <tbody id="dataLog"></tbody>
+    </table>
+  </div>
+  <div class="section">
+    <h4>2. 광고 표시 로그 (tracker ➔ ad)</h4>
+    <div class="count">총 광고 로그: <span id="adCount">0</span>건</div>
+    <table>
+      <thead>
+        <tr><th>시간</th><th>사이트</th><th>광고업체</th><th>광고분류</th></tr>
+      </thead>
+      <tbody id="adLog"></tbody>
+    </table>
+  </div>
   <script src="popup.js"></script>
 </body>
 </html>

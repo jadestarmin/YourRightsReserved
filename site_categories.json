@@ -1,0 +1,9 @@
+{
+  "news|cnn|nytimes\\.com": "뉴스",
+  "travel|tour": "여행 & 관광",
+  "shop|store|mall": "쇼핑",
+  "video|youtube|vimeo": "동영상",
+  "blog|medium": "블로그",
+  "finance|bank|stock|krx": "금융",
+  "social|facebook|twitter|instagram": "소셜 미디어"
+}
