@@ -1,6 +1,6 @@
 document.addEventListener('DOMContentLoaded', () => {
   const tbody = document.getElementById('logTable');
-  chrome.storage.local.get({ logs: [] }, data => {
+  chrome.storage.local.get({ logs: [] }, data => { 
     const recent = data.logs.slice(-10).reverse();
     recent.forEach(rec => {
       const tr = document.createElement('tr');

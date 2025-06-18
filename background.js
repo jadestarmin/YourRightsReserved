@@ -1,6 +1,6 @@
 // Listen for completed network requests matching Google Ads trackers
 const adTrackerPatterns = [
-  "*://*.doubleclick.net/*",
+  "*://*.doubleclick.net/*", 
   "*://*.googlesyndication.com/*"
 ];
 
