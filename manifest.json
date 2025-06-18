@@ -1,0 +1,31 @@
+{
+  "manifest_version": 3,
+  "name": "Your Rights Reserved",
+  "version": "0.1.0",
+  "description": "Monitor Google Ads calls and visualize tracking per site.",
+  "icons": {
+    "16": "icons/approval.png",
+    "48": "icons/approval.png",
+    "128": "icons/approval.png"
+  },
+  "permissions": [
+    "webRequest",
+    "webRequestBlocking",
+    "storage",
+    "notifications",
+    "activeTab"
+  ],
+  "host_permissions": [
+    "*://*/*"
+  ],
+  "background": {
+    "service_worker": "background.js"
+  },
+  "action": {
+    "default_popup": "popup.html",
+    "default_icon": {
+      "16": "icons/icon16.png",
+      "48": "icons/icon48.png"
+    }
+  }
+}
